@@ -36,7 +36,7 @@ but you can modify its phat with the `path_locata` variable.
 You can use the script [1sourceTracking_icoCNN.py](https://github.com/DavidDiazGuerra/icoDOA/blob/master/1sourceTracking_icoCNN.py) 
 to train the model and test it with synthetic and real recordings. You can change the resolution of the inputs maps by 
 changing the value or `r` in [line 22](https://github.com/DavidDiazGuerra/icoDOA/blob/master/1sourceTracking_icoCNN.py#L22).
-The script is organized in cells, you can skip the [training cell](https://github.com/DavidDiazGuerra/icoDOA/blob/master/1sourceTracking_icoCNN.py#L115) 
+The script is organized in cells, you can skip the [training cell](https://github.com/DavidDiazGuerra/icoDOA/blob/master/1sourceTracking_icoCNN.py#L82) 
 and just [load the pretrained models](https://github.com/DavidDiazGuerra/icoDOA/blob/master/1sourceTracking_icoCNN.py#L115).
 
 You can find the definition of the model in [acousticTrackingModels.py](https://github.com/DavidDiazGuerra/icoDOA/blob/master/acousticTrackingModels.py#L19)
@@ -60,7 +60,7 @@ is not used by the main script may be untested and could contain bugs.
 
 ## References
 
->[1] D. Diaz-Guerra, A. Miguel, J.R. Beltran, "Direction of Arrival Estimation of Sound Sources Using Icosahedral CNNs," [[arXiv preprint]()].
+>[1] D. Diaz-Guerra, A. Miguel, J.R. Beltran, "Direction of Arrival Estimation of Sound Sources Using Icosahedral CNNs," [[arXiv preprint](https://arxiv.org/abs/2203.16940)].
 >
 >[2] D. Diaz-Guerra, A. Miguel, J.R. Beltran, "gpuRIR: A python library for Room Impulse Response simulation with GPU 
 acceleration," in Multimedia Tools and Applications, Oct. 2020 [[DOI](https://doi.org/10.1007/s11042-020-09905-3)] [[SharedIt](https://rdcu.be/b8gzW)] [[arXiv preprint](https://arxiv.org/abs/1810.11359)].

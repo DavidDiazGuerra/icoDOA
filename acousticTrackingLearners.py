@@ -1467,7 +1467,9 @@ class TrackingFromIcoMapsPreprocessor(Preprocessor):
 			output += [ maps ]
 
 		if acoustic_scene_batch is not None:
-			DOAw_batch = torch.stack([torch.tensor([acoustic_scene_batch[i].DOAw[n].astype(np.float32) for n in range(len(acoustic_scene_batch[i].DOAw))]) for i in range(len(acoustic_scene_batch))])
+			DOAw_batch = torch.tensor(np.stack([np.stack([acoustic_scene_batch[i].DOAw[n].astype(np.float32)
+														  for n in range(len(acoustic_scene_batch[i].DOAw))])
+												for i in range(len(acoustic_scene_batch))]))			
 			if self.cuda_activated:
 				DOAw_batch = DOAw_batch.cuda()
 			output += [ DOAw_batch ]
